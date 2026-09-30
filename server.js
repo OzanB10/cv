@@ -46,6 +46,28 @@ if (fs.existsSync(distImages)) {
   app.use('/images', express.static(distImages, staticOptions));
 }
 
+// Explicit direct handler for /images/:filename to guarantee actual image binaries are sent
+app.get('/images/:filename', (req, res) => {
+  const filename = path.basename(req.params.filename);
+  const candidates = [
+    path.join(__dirname, 'public', 'images', filename),
+    path.join(__dirname, 'dist', 'images', filename),
+    path.join(__dirname, 'src', 'assets', 'images', filename)
+  ];
+
+  for (const filePath of candidates) {
+    if (fs.existsSync(filePath)) {
+      const ext = path.extname(filename).toLowerCase();
+      const mime = ext === '.png' ? 'image/png' : (ext === '.jpg' || ext === '.jpeg') ? 'image/jpeg' : 'application/octet-stream';
+      res.setHeader('Content-Type', mime);
+      return res.sendFile(filePath);
+    }
+  }
+
+  // If missing, NEVER send index.html
+  res.status(404).type('text/plain').send('Image Not Found: ' + filename);
+});
+
 // SPA fallback: send index.html for any client navigation route
 app.get('*', (req, res) => {
   const indexFile = path.join(distPath, 'index.html');
