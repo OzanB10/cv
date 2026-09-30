@@ -71,12 +71,12 @@ export const portfolioDataEN: PortfolioContent = {
   profile: {
     name: "Ozan Bolel",
     title: "Mobile Developer",
-    subtitle: "I build scalable, user-focused cross-platform mobile experiences with Flutter, Riverpod, and clean backend APIs.",
-    summary: "Mobile Developer with 2 years of experience building cross-platform applications using Flutter. Skilled in Flutter, Riverpod, Firebase, REST APIs, and Laravel, with hands-on experience publishing applications to the App Store and Google Play. Passionate about building scalable, user-focused products and leveraging AI-assisted development tools to improve productivity, code quality, and software delivery.",
+    subtitle: "I build high-performance, responsive, and user-friendly mobile applications using Flutter & Dart.",
+    summary: "Mobile Developer with 2+ years of hands-on experience building high-performance, responsive, and user-friendly cross-platform mobile apps with Flutter & Dart. My engineering approach centers on Clean Architecture, centralized state management with Riverpod, and robust REST API integrations with Laravel/PHP.",
     aboutParagraphs: [
-      "I am a passionate Mobile Developer with over 2 years of hands-on experience crafting high-performance, responsive cross-platform applications with Flutter and Dart. My engineering approach combines clean architecture, predictable state management using Riverpod, and robust backend integration with Laravel and REST APIs.",
-      "At Anatolia System, I transitioned from an enthusiastic intern to a Full Stack Junior Developer, taking end-to-end ownership of critical mobile features from initial UI/UX conception to store publishing on both the Apple App Store and Google Play Store. I have also designed and deployed custom real-time push notification pipelines using Firebase Cloud Messaging (FCM) and custom PHP/Laravel microservices.",
-      "Beyond standard mobile development, I actively embrace AI-assisted workflows using tools like Cursor and Claude Code to accelerate prototyping, maintain stringent code quality, and architect resilient software solutions."
+      "Mobile Developer with 2+ years of experience building high-performance, responsive, and user-friendly cross-platform mobile applications using Flutter and Dart. My engineering approach is built on Clean Architecture, centralized state management with Riverpod, and robust REST API integrations with Laravel/PHP.",
+      "At Anatolia System, advancing from an intern to a Full Stack Junior Developer, I took end-to-end ownership of mobile features—from UI design and backend API integration to App Store and Google Play releases. I also built real-time notification pipelines using Firebase Cloud Messaging (FCM) and custom PHP/Laravel backend services.",
+      "Alongside core mobile engineering, I actively leverage AI-assisted development tools like Cursor and Claude Code to accelerate prototyping, elevate code standards, and deliver maintainable software solutions."
     ],
     email: "ozanbolel@gmail.com",
     phone: "+90 541 809 30 07",
@@ -101,10 +101,10 @@ export const portfolioDataEN: PortfolioContent = {
       startDate: "06/2025",
       endDate: "Present",
       bullets: [
-        "Independently delivered end-to-end mobile features in Flutter, from UI design to backend API integration, ensuring smooth release cycles.",
-        "Designed database structures and collaborated on backend endpoints using Laravel and PHP.",
-        "Implemented Firebase Cloud Messaging (FCM) push notifications with a custom PHP server, enabling real-time user engagement without relying on third-party notification services.",
-        "Managed App Store & Google Play release processes (build uploads, store listing, production deployment)."
+        "Delivered end-to-end mobile features in Flutter from UI design to backend API integration.",
+        "Designed database structures and collaborated on backend API endpoints using Laravel and PHP.",
+        "Implemented real-time push notifications using Firebase Cloud Messaging (FCM) and custom backend handlers.",
+        "Managed App Store Connect & Google Play Console release processes from testing to production."
       ],
       technologies: ["Flutter", "Dart", "Laravel", "PHP", "MySQL", "Firebase FCM", "App Store Connect", "Google Play Console", "REST APIs", "Git"]
     },
@@ -117,9 +117,9 @@ export const portfolioDataEN: PortfolioContent = {
       startDate: "02/2025",
       endDate: "06/2025",
       bullets: [
-        "Developed clean and reusable UI components using Flutter.",
-        "Integrated REST APIs and implemented basic state management.",
-        "Supported debugging, performance improvements, and feature enhancements across multiple active mobile repositories."
+        "Built clean, modular, and reusable UI components in Flutter.",
+        "Integrated REST APIs and implemented responsive app data flows.",
+        "Contributed to bug fixing, UI polish, and performance enhancements across active apps."
       ],
       technologies: ["Flutter", "Dart", "REST APIs", "State Management", "UI/UX", "Git", "Postman", "Xcode", "Android Studio"]
     }
@@ -130,29 +130,29 @@ export const portfolioDataEN: PortfolioContent = {
       title: "SadeFatura",
       date: "05/2026 — 06/2026",
       year: "2026",
-      tagline: "Flutter e-Invoicing & Cloud Accounting Mobile Platform",
-      description: "Designed and developed SadeFatura, a Flutter e-Invoicing platform featuring e-Invoice/e-Archive management, invoice generation, document storage, authentication, cloud synchronization, API integration, and secure digital invoicing workflows.",
-      longDescription: "SadeFatura is a digital invoicing and accounting assistant built for Turkish businesses, freelancers, and enterprises. It facilitates automated e-Invoice (e-Fatura) and e-Archive (e-Arşiv) creation, instant PDF export, cloud syncing, and secure authentication pipelines connecting directly with national financial integration providers.",
-      image: "/src/assets/images/sade1.png",
+      tagline: "Fast e-Invoicing & Accounting Mobile App",
+      description: "A clean mobile invoicing platform enabling businesses to create, manage, and share official e-Invoices and PDF documents directly from their phones.",
+      longDescription: "SadeFatura streamlines digital invoicing for Turkish businesses and freelancers. It provides automated e-Invoice and e-Archive creation, instant vector PDF exports, one-click sharing via WhatsApp and Email, real-time revenue tracking, and secure cloud synchronization.",
+      image: "/images/sade1.png",
       images: [
-        "/src/assets/images/sade1.png",
-        "/src/assets/images/sade2.png",
-        "/src/assets/images/sade3.png",
-        "/src/assets/images/sade4.png"
+        "/images/sade1.png",
+        "/images/sade2.png",
+        "/images/sade3.png",
+        "/images/sade4.png"
       ],
       role: "Lead Mobile Developer & UI Architect",
       technologies: ["Flutter", "Dart", "REST APIs", "PDF Generation", "Cloud Sync", "Secure Storage", "State Management", "e-Invoice API"],
       keyFeatures: [
-        "End-to-end e-Invoice and e-Archive generation with Turkish tax compliance",
-        "Encrypted local & cloud document storage with instant search",
-        "Seamless PDF rendering and direct WhatsApp/Email sharing pipelines",
-        "Real-time revenue & expense tracking visual summaries",
-        "Multi-tenant authentication with role-based permissions"
+        "Official e-Invoice and e-Archive generation with Turkish tax compliance",
+        "Instant vector PDF creation with QR codes for fast sharing via WhatsApp and Email",
+        "Organized client and company address book with balance summaries",
+        "Visual revenue and expense tracking with credit balance alerts",
+        "Multi-user secure login with token-based session protection"
       ],
       architectureHighlights: [
-        "Repository pattern with clean separation between data layer and UI",
-        "Optimized vector PDF renderer for lightning-fast invoice generation",
-        "Biometric & token-based session security for financial records"
+        "Clean architecture separating data fetching, state logic, and visual components",
+        "Fast local caching for instant invoice list display",
+        "Lightweight vector PDF rendering engine optimized for mobile devices"
       ]
     },
     {
@@ -160,29 +160,29 @@ export const portfolioDataEN: PortfolioContent = {
       title: "Anamedsis",
       date: "11/2025 — 01/2026",
       year: "2025",
-      tagline: "SaaS Business Management & CRM Platform",
-      description: "Designed and developed Anamedsis, a Flutter + Riverpod SaaS business management platform featuring appointment scheduling, CRM, customer management, inventory tracking, financial reporting, authentication, notifications, offline caching, and API-driven workflows.",
-      longDescription: "Anamedsis is an all-in-one mobile SaaS suite tailored for service businesses and clinics. Built with Flutter and Riverpod, it combines real-time calendar appointments, customer relationship management (CRM), stock inventory alerts, and offline caching with automatic server synchronization.",
-      image: "/src/assets/images/anamedsis1.png",
+      tagline: "Clinic & Business Appointment CRM Suite",
+      description: "An all-in-one mobile operations app for clinics and service businesses featuring appointment scheduling, customer CRM, and inventory tracking.",
+      longDescription: "Anamedsis brings calendar scheduling, patient profiles, inventory control, and financial summaries together into an intuitive mobile workspace. With robust offline support, staff can view and manage appointments smoothly even without an active internet connection.",
+      image: "/images/anamedsis1.png",
       images: [
-        "/src/assets/images/anamedsis1.png",
-        "/src/assets/images/anamedsis2.png",
-        "/src/assets/images/anamedsis3.png",
-        "/src/assets/images/anamedsis4.png"
+        "/images/anamedsis1.png",
+        "/images/anamedsis2.png",
+        "/images/anamedsis3.png",
+        "/images/anamedsis4.png"
       ],
       role: "Mobile Architect & Frontend Engineer",
       technologies: ["Flutter", "Riverpod", "REST APIs", "CRM", "Offline Caching", "Financial Analytics", "Push Notifications", "Hive"],
       keyFeatures: [
-        "Interactive schedule & appointment calendar with color-coded slots",
-        "Complete customer relationship pipeline (CRM) with history logs",
-        "Inventory level monitoring with low-stock push alerts",
-        "Financial overview with daily/monthly revenue analytics graphs",
-        "Offline-first capability allowing field operations without internet"
+        "Color-coded interactive appointment calendar with day and week views",
+        "Complete customer profiles with treatment history and visit logs",
+        "Automated inventory level alerts for low-stock clinic supplies",
+        "Daily and monthly revenue summaries with visual charts",
+        "Offline-ready data sync so staff can work without interruption"
       ],
       architectureHighlights: [
-        "Reactive state orchestration using Riverpod StateNotifier and Providers",
-        "Local caching with Hive database and background sync resolver",
-        "Modular UI design system matching modern material ergonomics"
+        "Reactive state management powered by Riverpod providers",
+        "Local Hive database caching with automatic background synchronization",
+        "Reusable Material design component library tailored for clinic workflows"
       ]
     },
     {
@@ -190,28 +190,28 @@ export const portfolioDataEN: PortfolioContent = {
       title: "MekanBook",
       date: "04/2025 — 06/2025",
       year: "2025",
-      tagline: "Venue Discovery & Table Reservation App",
-      description: "Designed and developed MekanBook, a Flutter + Riverpod venue discovery app featuring API-driven place data, real-time search, city/district/category filters, authentication, offline caching, favorites, and reservation workflows for seamless venue discovery and booking.",
-      longDescription: "MekanBook connects users with top-rated cafes, bistros, and restaurants across Turkey. Users can explore curated spots on an interactive map, filter by cuisine and neighborhood, read verified reviews, save favorites offline, and book tables with real-time slot verification.",
-      image: "/src/assets/images/mekan1.png",
+      tagline: "Curated Venue Discovery & Table Booking App",
+      description: "Discover top-rated restaurants, cafes, and bistros, explore full menus and atmospheres, and book tables with real-time confirmation.",
+      longDescription: "MekanBook makes finding great dining spots effortless. Users can browse nearby places on an interactive map, filter by cuisine and neighborhood, read authentic reviews, view menus with pricing, and reserve tables directly from their phones.",
+      image: "/images/mekan1.png",
       images: [
-        "/src/assets/images/mekan1.png",
-        "/src/assets/images/mekan2.png",
-        "/src/assets/images/mekan3.png"
+        "/images/mekan1.png",
+        "/images/mekan2.png",
+        "/images/mekan3.png"
       ],
       role: "Flutter Developer",
       technologies: ["Flutter", "Riverpod", "Location Services", "Map Integration", "REST APIs", "Filter Engine", "Local DB"],
       keyFeatures: [
-        "Dynamic city, district, and culinary category filtering engine",
-        "Live search with debounced autocomplete and geolocated distance calculation",
-        "Interactive venue detail pages with menus, pricing, and photo galleries",
-        "Bookmark & favorites system with offline availability",
-        "Instant table booking and reservation confirmation flows"
+        "Dynamic neighborhood, city, and culinary category filtering engine",
+        "Instant search with autocomplete and location-based distance calculations",
+        "Detailed venue profiles with interior photos, menus, and customer reviews",
+        "Personal favorites collection with offline bookmarking",
+        "Quick table reservation flow with instant confirmation"
       ],
       architectureHighlights: [
-        "Riverpod-driven asynchronous data fetching with caching mechanisms",
-        "Optimized image caching and lazy loading for smooth 60fps list scrolling",
-        "Location-aware distance calculations with battery-efficient sensors"
+        "Efficient asynchronous API client with built-in response caching",
+        "Fast and smooth image caching and thumbnail loading for photo feeds",
+        "Battery-friendly geolocation queries and map markers"
       ]
     },
     {
@@ -219,27 +219,27 @@ export const portfolioDataEN: PortfolioContent = {
       title: "İnternetin Gazetesi",
       date: "02/2025 — 03/2025",
       year: "2025",
-      tagline: "High-Speed News Reader with Firebase & FCM",
-      description: "Designed and developed İnternetin Gazetesi, a Flutter news application featuring Firebase Authentication, Firebase Cloud Messaging, deep links, category-based push notifications, offline Hive caching, optimized image loading, and API-driven news delivery.",
-      longDescription: "A high-performance news reading application engineered for instant loading and high readership engagement. Features segmented category push alerts via FCM, custom bookmarking, and offline article caching.",
-      image: "/src/assets/images/internet1.png",
+      tagline: "Lightweight & High-Speed Mobile News Reader",
+      description: "A modern news app built for speed, delivering real-time breaking alerts and clean offline reading without intrusive clutter.",
+      longDescription: "Delivers instant news loading and seamless offline reading. Features customized push notifications by topic, deep link navigation into trending stories, dark mode, and readable typography.",
+      image: "/images/internet1.png",
       images: [
-        "/src/assets/images/internet1.png",
-        "/src/assets/images/internet2.png"
+        "/images/internet1.png",
+        "/images/internet2.png"
       ],
       role: "Mobile Developer",
       technologies: ["Flutter", "Firebase Auth", "Firebase FCM", "Hive Local DB", "Deep Linking", "REST APIs"],
       keyFeatures: [
-        "Breaking news push notifications categorized by topic interests",
-        "Instant deep linking directly into articles from push notifications",
-        "Offline reading mode with background caching via Hive",
-        "Dark/Light theme switching and customizable font size controls",
-        "Social sharing with custom branded links"
+        "Segmented push notifications based on personal reading interests",
+        "Deep links opening notifications directly to full story views",
+        "Offline article reading powered by local Hive storage",
+        "Comfortable reading settings with adjustable font sizes and dark mode",
+        "Fast social sharing links with custom preview metadata"
       ],
       architectureHighlights: [
-        "Firebase Cloud Messaging setup with customized topic subscription filters",
-        "Efficient media caching architecture reducing network payload by 40%",
-        "Deep link router integration for instant navigation"
+        "Firebase Cloud Messaging setup with targeted topic subscriptions",
+        "Smart image pre-caching reducing cellular data usage",
+        "Lightweight router with deep-link handling across app states"
       ]
     },
     {
@@ -247,57 +247,62 @@ export const portfolioDataEN: PortfolioContent = {
       title: "İko Haber",
       date: "03/2026 — 03/2026",
       year: "2026",
-      tagline: "White-Labeled Multi-Flavor Mobile News Platform",
-      description: "Designed and developed İkoHaber, a Flutter news application built as a white-labeled variant of İnternetin Gazetesi using Flutter flavors, featuring Firebase Authentication, Firebase Cloud Messaging, deep links, category-based push notifications, offline Hive caching, optimized image loading, and API-driven news delivery.",
-      longDescription: "İkoHaber is a specialized industry news publication developed using an enterprise white-label architecture. Utilizing Flutter build flavors and distinct configuration bundles, it allows continuous multi-tenant deployments from a unified single codebase.",
-      image: "/src/assets/images/0x0ss.png",
+      tagline: "White-Labeled Industry News & Publication App",
+      description: "A tailored mobile news platform built for industry professionals with dedicated alerts, sectoral articles, and offline access.",
+      longDescription: "Designed as a specialized white-label variant of the news reading engine. Powered by flexible Flutter build configurations, it offers custom branding, targeted notification channels, and offline storage.",
+      image: "/images/0x0ss.png",
       images: [
-        "/src/assets/images/0x0ss.png",
-        "/src/assets/images/iko2.png",
-        "/src/assets/images/iko3.png",
-        "/src/assets/images/iko4.png",
-        "/src/assets/images/iko5.png"
+        "/images/0x0ss.png",
+        "/images/iko2.png",
+        "/images/iko3.png",
+        "/images/iko4.png",
+        "/images/iko5.png"
       ],
       role: "Mobile Architect",
       technologies: ["Flutter Flavors", "Firebase", "FCM", "Deep Links", "White-Labeling", "Hive", "CI/CD Setup"],
       keyFeatures: [
-        "Multi-flavor architecture with customized branding, assets, and bundle IDs",
-        "Dedicated category-based push notification topics",
-        "High-efficiency offline cache with automatic synchronization",
-        "Streamlined App Store and Play Store release automation"
+        "Multi-flavor architecture allowing distinct branding from a single codebase",
+        "Sector-specific push notifications tailored for industry members",
+        "Fast offline article caching with automatic background refresh",
+        "Automated release bundles for iOS and Android app stores"
       ],
       architectureHighlights: [
-        "Single-codebase white-label setup with runtime flavor configuration",
-        "Targeted push notification routing tailored for sectoral subscribers",
-        "Shared business logic core with isolated UI theme tokens"
+        "Single codebase architecture using Flutter build flavors",
+        "Targeted push routing based on user industry segments",
+        "Shared business logic core with isolated brand theme tokens"
       ]
     },
     {
       id: "dugunmaster",
       title: "DüğünMaster",
-      date: "2025 — 2026",
-      year: "2026",
-      tagline: "Marketplace & Digital Wedding Planning Platform (Web / Full-Stack)",
-      description: "Marketplace & wedding planning platform connecting couples with wedding vendors. Developed business listings, dynamic filtering, search, favorites, quote requests, user/business management, and digital invitations using Flutter & Laravel REST API. Integrated planning tools including budget tracking, guest lists, seating charts, and RSVP. Built SEO-optimized category, location, and vendor landing pages.",
-      longDescription: "DüğünMaster is a comprehensive two-sided marketplace and wedding organization ecosystem. It connects couples with wedding venues, photographers, bridal shops, and catering services while providing digital planning tools including interactive seating charts, budget calculators, guest RSVP management, and dynamic quote request pipelines.",
-      image: "/src/assets/images/dugunmaster_web_preview_1790689268369.jpg",
+      date: "06/2026 — Present",
+      year: "2026 — Present",
+      tagline: "Wedding Marketplace & Digital Planning Suite",
+      description: "A comprehensive web & mobile platform connecting couples with wedding venues and vendors while providing digital tools for seating charts, budgets, and RSVP.",
+      longDescription: "DüğünMaster simplifies wedding planning through a modern vendor marketplace and organization dashboard. Couples can filter venues by location and price, request custom quotes, design interactive guest seating charts, monitor their wedding budget, and manage RSVPs online.",
+      image: "/images/dugun1.png",
       images: [
-        "/src/assets/images/dugunmaster_web_preview_1790689268369.jpg",
-        "/src/assets/images/dugunmaster_planner_tools_1790689286081.jpg"
+        "/images/dugun1.png",
+        "/images/dugun2.png",
+        "/images/dugun3.png",
+        "/images/dugun4.png",
+        "/images/dugun5.png",
+        "/images/dugun6.png",
+        "/images/dugun7.png"
       ],
       role: "Flutter / Full-Stack Developer",
       technologies: ["Flutter", "Dart", "Laravel", "REST API", "MySQL", "Firebase", "Riverpod", "Authentication", "State Management", "Responsive UI", "SEO", "Dynamic Filtering", "Marketplace Architecture"],
       keyFeatures: [
-        "Dynamic vendor marketplace with multi-tier category and geolocation filtering",
-        "Direct quote request (teklif alma) and vendor inquiry communication pipelines",
-        "Interactive digital wedding planner: seating charts, budget breakdowns & guest RSVP",
-        "Digital wedding invitation generator with customized sharing links",
-        "SEO-optimized responsive landing pages for cities, districts, and vendor categories"
+        "Curated vendor directory with multi-tier category and city filters",
+        "Direct quote request pipelines connecting couples directly to venue managers",
+        "Interactive planning suite: drag-and-drop seating charts, budget tracking, and RSVP",
+        "Custom digital wedding invitation generator with unique links",
+        "SEO-friendly landing pages designed for high search engine visibility"
       ],
       architectureHighlights: [
-        "Modular Laravel REST backend architecture with optimized MySQL relational schemas",
-        "State management and reactive UI layers with Riverpod & GetX patterns",
-        "High-performance caching and SEO-friendly dynamic routing structures"
+        "Modular Laravel REST backend architecture with structured MySQL relations",
+        "Responsive frontend layouts optimized for mobile devices and desktop screens",
+        "Optimized query indexing for fast marketplace search and category filtering"
       ]
     }
   ],
@@ -360,10 +365,10 @@ export const portfolioDataTR: PortfolioContent = {
   profile: {
     name: "Ozan Bolel",
     title: "Mobil Geliştirici",
-    subtitle: "Flutter, Riverpod ve güçlü backend API'leri ile ölçeklenebilir, kullanıcı odaklı çapraz platform mobil uygulamalar geliştiriyorum.",
-    summary: "Flutter ile çapraz platform uygulamalar geliştirme konusunda 2 yıllık deneyime sahip Mobil Geliştirici. Flutter, Riverpod, Firebase, REST API'ler ve Laravel konularında yetkin; App Store ve Google Play'e uygulama yayınlama deneyimine sahip. Ölçeklenebilir, kullanıcı odaklı ürünler geliştirmeye ve AI destekli geliştirme araçlarıyla üretkenliği ve kod kalitesini artırmaya tutkulu.",
+    subtitle: "Flutter ve Dart ile yüksek performanslı, duyarlı ve kullanıcı dostu mobil uygulamalar geliştiriyorum.",
+    summary: "Flutter ve Dart ile yüksek performanslı, duyarlı ve kullanıcı dostu çapraz platform mobil uygulamalar geliştiren 2 yılı aşkın deneyime sahip bir Mobil Geliştiriciyim. Temiz mimari (Clean Architecture), Riverpod ile merkezi state yönetimi ve Laravel/PHP ile sağlam REST API entegrasyonlarına odaklanıyorum.",
     aboutParagraphs: [
-      "Flutter ve Dart ile yüksek performanslı, duyarlı ve kullanıcı dostu çapraz platform mobil uygulamalar geliştiren 2 yılı aşkın deneyime sahip bir Mobil Geliştiriciyim. Mühendislik yaklaşımım; temiz mimari (Clean Architecture), Riverpod ile öngörülebilir durum yönetimi ve Laravel/PHP ile sağlam REST API entegrasyonlarına dayanır.",
+      "Flutter ve Dart ile yüksek performanslı, duyarlı ve kullanıcı dostu çapraz platform mobil uygulamalar geliştiren 2 yılı aşkın deneyime sahip bir Mobil Geliştiriciyim. Mühendislik yaklaşımım; temiz mimari (Clean Architecture), Riverpod ile merkezi state yönetimi ve Laravel/PHP ile sağlam REST API entegrasyonlarına dayanır.",
       "Anatolia System bünyesinde stajyerlikten Full Stack Junior Developer rolüne geçerek; kullanıcı arayüzü tasarımından backend API entegrasyonuna, App Store ve Google Play yayın süreçlerine kadar uçtan uca mobil özelliklerin sorumluluğunu üstlendim. Ayrıca Firebase Cloud Messaging (FCM) ve özel PHP/Laravel sunucuları ile gerçek zamanlı bildirim sistemleri kurdum.",
       "Standart mobil geliştirmenin yanı sıra Cursor ve Claude Code gibi AI destekli geliştirme araçlarını aktif olarak kullanarak prototiplemeyi hızlandırıyor, kod standartlarını yükseltiyor ve sürdürülebilir yazılım çözümleri üretiyorum."
     ],
@@ -390,10 +395,10 @@ export const portfolioDataTR: PortfolioContent = {
       startDate: "06/2025",
       endDate: "Günümüz",
       bullets: [
-        "Flutter ile UI tasarımından backend API entegrasyonuna kadar uçtan uca mobil özellikleri bağımsız olarak teslim ederek sorunsuz sürüm döngüleri sağladı.",
-        "Laravel ve PHP kullanarak veritabanı yapılarını tasarladı ve backend uç noktalarında iş birliği yaptı.",
-        "Üçüncü taraf bildirim servislerine bağımlı kalmadan gerçek zamanlı kullanıcı etkileşimi sağlayan özel bir PHP sunucusuyla Firebase Cloud Messaging (FCM) anlık bildirimlerini uyguladı.",
-        "App Store & Google Play sürüm süreçlerini (derleme yüklemeleri, mağaza listelemesi, canlıya alma) yönetti."
+        "Flutter ile modüler ve hızlı çalışan mobil arayüzler ve özellikler geliştirdi.",
+        "Laravel ve PHP ile veritabanı yapısını tasarladı ve mobil uygulamalar için REST API servisleri hazırladı.",
+        "Firebase Cloud Messaging (FCM) ile anlık bildirim altyapısını ve arka plan servislerini kurdu.",
+        "App Store Connect ve Google Play Console mağaza yükleme ve sürüm yayınlama süreçlerini yönetti."
       ],
       technologies: ["Flutter", "Dart", "Laravel", "PHP", "MySQL", "Firebase FCM", "App Store Connect", "Google Play Console", "REST APIs", "Git"]
     },
@@ -406,11 +411,11 @@ export const portfolioDataTR: PortfolioContent = {
       startDate: "02/2025",
       endDate: "06/2025",
       bullets: [
-        "Flutter kullanarak temiz ve yeniden kullanılabilir UI bileşenleri geliştirdi.",
-        "REST API'leri entegre etti ve temel durum yönetimini uyguladı.",
-        "Hata ayıklama (debugging), performans iyileştirmeleri ve özellik geliştirmelerine destek verdi."
+        "Flutter ve Dart ile temiz, yeniden kullanılabilir arayüz bileşenleri geliştirdi.",
+        "REST API servislerini entegre ederek verilerin mobil ekranda dinamik gösterilmesini sağladı.",
+        "Hata ayıklama, performans iyileştirmeleri ve kullanıcı arayüzü geliştirmelerine katkı sundu."
       ],
-      technologies: ["Flutter", "Dart", "REST APIs", "State Management", "UI/UX", "Git", "Postman", "Xcode", "Android Studio"]
+      technologies: ["Flutter", "Dart", "REST APIs", "Git", "Postman", "Xcode", "Android Studio"]
     }
   ],
   projects: [
@@ -419,29 +424,29 @@ export const portfolioDataTR: PortfolioContent = {
       title: "SadeFatura",
       date: "05/2026 — 06/2026",
       year: "2026",
-      tagline: "Flutter e-Fatura & Bulut Ön Muhasebe Mobil Platformu",
-      description: "e-Fatura/e-Arşiv yönetimi, fatura oluşturma, belge saklama, kimlik doğrulama, bulut senkronizasyonu, API entegrasyonu ve güvenli dijital faturalama iş akışlarını içeren bir Flutter e-Faturalandırma platformu olan SadeFatura'yı tasarladı ve geliştirdi.",
-      longDescription: "SadeFatura, işletmeler ve serbest meslek sahipleri için tasarlanmış modern bir dijital e-dönüşüm platformudur. e-Fatura ve e-Arşiv oluşturma, anında PDF çıktısı alma, bulut depolama ve güvenli entegratör API bağlantılarını içerir.",
-      image: "/src/assets/images/sade1.png",
+      tagline: "Kurumsal Mobil e-Fatura & Ön Muhasebe Platformu",
+      description: "GİB mevzuatına tam uyumlu e-Fatura ve e-Arşiv süreçlerini cepten yöneten, anında karekodlu vektörel PDF üreten ve çoklu kullanıcı destekleyen profesyonel mobil ön muhasebe uygulaması.",
+      longDescription: "SadeFatura, işletmelerin faturalama ve cari takip süreçlerini mobile taşıyan kapsamlı bir ön muhasebe platformudur. GİB mevzuatına uygun e-Fatura ve e-Arşiv düzenleme, anında karekodlu vektörel PDF oluşturma, tek tıkla WhatsApp ve e-posta ile paylaşım, gerçek zamanlı gelir-gider takibi ve güvenli bulut senkronizasyonu sunar.",
+      image: "/images/sade1.png",
       images: [
-        "/src/assets/images/sade1.png",
-        "/src/assets/images/sade2.png",
-        "/src/assets/images/sade3.png",
-        "/src/assets/images/sade4.png"
+        "/images/sade1.png",
+        "/images/sade2.png",
+        "/images/sade3.png",
+        "/images/sade4.png"
       ],
       role: "Lead Mobil Geliştirici & UI Mimarı",
-      technologies: ["Flutter", "Dart", "REST APIs", "PDF Generation", "Cloud Sync", "Secure Storage", "State Management", "e-Fatura API"],
+      technologies: ["Flutter", "Dart", "Clean Architecture", "REST APIs", "PDF Generation", "Cloud Sync", "Secure Storage", "State Management", "e-Fatura API"],
       keyFeatures: [
-        "GİB uyumlu e-Fatura ve e-Arşiv oluşturma ve yönetimi",
-        "Şifrelenmiş yerel ve bulut belge depolama",
-        "Tek tıkla PDF üretimi ve WhatsApp/E-posta ile paylaşım",
-        "Gelir/gider istatistikleri ve görsel özet panelleri",
-        "Çok kullanıcılı güvenli kimlik doğrulama"
+        "GİB mevzuatına tam uyumlu hızlı e-Fatura ve e-Arşiv oluşturma",
+        "Karekodlu vektörel PDF çıktısı alma ve tek tıkla WhatsApp / E-posta ile paylaşma",
+        "Müşteri ve firma adres rehberi ile bakiye durumu takibi",
+        "Gelir-gider istatistikleri ve anlık kontör bakiye bildirimleri",
+        "Token tabanlı güvenli oturum açma ve biyometrik giriş desteği"
       ],
       architectureHighlights: [
-        "Repository mimarisi ile veri ve UI katmanının net ayrımı",
-        "Hızlı ve optimize vektörel PDF oluşturma motoru",
-        "Finansal veriler için biyometrik ve token tabanlı güvenlik"
+        "Clean Architecture prensipleriyle ayrıştırılmış veri, domain ve arayüz katmanları",
+        "Mobil cihaz üzerinde çalışan yüksek performanslı vektörel PDF render motoru",
+        "Hızlı yerel önbellekleme ve token tabanlı güvenli oturum yönetimi"
       ]
     },
     {
@@ -449,29 +454,29 @@ export const portfolioDataTR: PortfolioContent = {
       title: "Anamedsis",
       date: "11/2025 — 01/2026",
       year: "2025",
-      tagline: "SaaS İşletme Yönetimi & Randevu CRM Platformu",
-      description: "Randevu planlama, CRM, müşteri yönetimi, stok takibi, finansal raporlama, kimlik doğrulama, bildirimler, çevrimdışı önbellekleme ve API odaklı iş akışlarını içeren Flutter + Riverpod SaaS işletme yönetim platformu Anamedsis'i tasarladı ve geliştirdi.",
-      longDescription: "Hizmet sektöründeki işletmeler ve klinikler için geliştirilmiş hepsi-bir-arada mobil SaaS çözümü. Randevu takvimi, müşteri geçmişi, stok seviyeleri ve çevrimdışı çalışma desteği sunar.",
-      image: "/src/assets/images/anamedsis1.png",
+      tagline: "Klinik & Randevu Yönetimi Mobil Platformu",
+      description: "Güzellik merkezleri ve klinikler için interaktif randevu takvimi, müşteri CRM, otomatik sarf malzeme stok takibi ve çevrimdışı çalışma desteği sunan hepsi bir arada mobil işletme uygulaması.",
+      longDescription: "Anamedsis, yoğun randevu ve müşteri trafiğine sahip sağlık ve güzellik işletmeleri için geliştirilmiş kurumsal bir mobil yönetim asistanıdır. Renk kodlu interaktif randevu takvimi, kapsamlı müşteri işlem geçmişi, sarf malzeme kritik stok uyarıları ve internet bağlantısı kopsa dahi kesintisiz çalışan offline-first veri mimarisi sunar.",
+      image: "/images/anamedsis1.png",
       images: [
-        "/src/assets/images/anamedsis1.png",
-        "/src/assets/images/anamedsis2.png",
-        "/src/assets/images/anamedsis3.png",
-        "/src/assets/images/anamedsis4.png"
+        "/images/anamedsis1.png",
+        "/images/anamedsis2.png",
+        "/images/anamedsis3.png",
+        "/images/anamedsis4.png"
       ],
       role: "Mobil Mimar & Frontend Mühendisi",
-      technologies: ["Flutter", "Riverpod", "REST APIs", "CRM", "Çevrimdışı Önbellek", "Finansal Raporlama", "Push Notifications", "Hive"],
+      technologies: ["Flutter", "Riverpod", "REST APIs", "CRM", "Offline-First Mimari", "Finansal Raporlama", "Push Notifications", "Hive"],
       keyFeatures: [
-        "Görsel renk kodlu interaktif randevu takvimi",
-        "Detaylı müşteri yönetim ve geçmiş takip (CRM) altyapısı",
-        "Kritik stok seviyeleri için anlık bildirim uyarıları",
-        "Günlük/aylık gelir-gider grafiksel analizleri",
-        "İnternet kesintilerinde kesintisiz çevrimdışı çalışma"
+        "Günlük ve haftalık görünümlü, renk kodlu interaktif randevu takvimi",
+        "Geçmiş işlem detayları ve notları içeren müşteri profilleri (CRM)",
+        "Tükenmek üzere olan sarf malzemeleri için otomatik stok uyarıları",
+        "Günlük ve aylık gelir-gider grafiksel analiz paneli",
+        "İnternet kesintilerinde bile randevuları görüntüleme ve işlem yapma imkanı"
       ],
       architectureHighlights: [
-        "Riverpod StateNotifier ve Provider mimarisi",
-        "Hive veritabanı ile yerel önbellek ve otomatik arka plan senkronizasyonu",
-        "Modern Material ergonomisine uygun modüler UI sistemi"
+        "Riverpod ile yönetilen modüler, reaktif ve kararlı state mimarisi",
+        "Hive NoSQL veritabanı ile otomatik arka plan senkronizasyonu ve offline-first yapı",
+        "Klinik çalışanlarının kolayca kullanabileceği ergonomik Material tasarım bileşenleri"
       ]
     },
     {
@@ -479,28 +484,28 @@ export const portfolioDataTR: PortfolioContent = {
       title: "MekanBook",
       date: "04/2025 — 06/2025",
       year: "2025",
-      tagline: "Mekan Keşfi & Masa Rezervasyon Uygulaması",
-      description: "API odaklı mekan verileri, gerçek zamanlı arama, şehir/ilçe/kategori filtreleri, kimlik doğrulama, çevrimdışı önbellekleme, favoriler ve rezervasyon iş akışlarını içeren Flutter + Riverpod mekan keşif uygulaması MekanBook'u tasarladı ve geliştirdi.",
-      longDescription: "Kullanıcıların en popüler kafe, restoran ve sosyal mekanları keşfetmesini, filtrelemesini ve doğrudan masa rezervasyonu yapmasını sağlayan kapsamlı bir mobil uygulama.",
-      image: "/src/assets/images/mekan1.png",
+      tagline: "Restoran Keşfi & Masa Rezervasyon Uygulaması",
+      description: "Kullanıcıların çevrelerindeki popüler kafe ve restoranları fotoğrafları ve menüleriyle keşfedip kolayca masa ayırtabildiği sosyal mekan rehberi.",
+      longDescription: "MekanBook, şehirdeki en popüler kafe, restoran ve bistroları kullanıcılarla buluşturan iki yönlü bir keşif ve rezervasyon platformudur. Harita üzerinden en yakın mekanları listeleme, mutfak ve bütçe türüne göre filtreleme, yüksek çözünürlüklü mekan fotoğraflarını inceleme ve saniyeler içinde online masa rezervasyonu oluşturma imkanı sunar.",
+      image: "/images/mekan1.png",
       images: [
-        "/src/assets/images/mekan1.png",
-        "/src/assets/images/mekan2.png",
-        "/src/assets/images/mekan3.png"
+        "/images/mekan1.png",
+        "/images/mekan2.png",
+        "/images/mekan3.png"
       ],
       role: "Flutter Geliştirici",
       technologies: ["Flutter", "Riverpod", "Konum Servisleri", "Harita Entegrasyonu", "REST APIs", "Filtreleme Motoru", "Local DB"],
       keyFeatures: [
-        "İl, ilçe ve mekan kategorisi bazlı gelişmiş filtreleme",
-        "Canlı anlık arama ve mesafeye göre sıralama",
-        "Menü, fiyat ve fotoğraf galerisi içeren mekan detay sayfaları",
-        "Çevrimdışı erişilebilir favori listesi",
-        "Anında masa rezervasyonu ve onay akışı"
+        "İl, ilçe ve mutfak türü bazlı akıllı mekan filtreleme motoru",
+        "Arama yaparken anında tamamlanan mekan önerileri ve mesafe hesabı",
+        "İç mekan fotoğrafları, menü, fiyatlandırma ve gerçek yorumları içeren detay sayfaları",
+        "İnternetsiz de erişilebilen favori mekanlar listesi",
+        "Anında onaylanan pratik masa rezervasyon akışı"
       ],
       architectureHighlights: [
-        "Riverpod ile asenkron veri yönetimi ve önbellekleme",
-        "Akıcı 60fps kaydırma için optimize edilmiş görsel önbellekleme",
-        "Pil dostu konum servisleri entegrasyonu"
+        "Yanıtları önbelleğe alan akıllı ve hızlı API iletişim katmanı",
+        "Fotoğraf galerilerinde hızlı ve akıcı görsel kaydırma optimizasyonu",
+        "Pil dostu konum servisleri ve harita pin entegrasyonu"
       ]
     },
     {
@@ -508,27 +513,27 @@ export const portfolioDataTR: PortfolioContent = {
       title: "İnternetin Gazetesi",
       date: "02/2025 — 03/2025",
       year: "2025",
-      tagline: "Firebase & FCM Destekli Hızlı Haber Okuyucu",
-      description: "Firebase Kimlik Doğrulama, Firebase Cloud Messaging, derin bağlantılar (deep links), kategori bazlı anlık bildirimler, çevrimdışı Hive önbellekleme, optimize görsel yükleme ve API odaklı haber sunumu içeren bir Flutter haber uygulaması olan İnternetin Gazetesi'ni tasarladı ve geliştirdi.",
-      longDescription: "Hızlı yükleme ve yüksek kullanıcı etkileşimi hedefleyen modern bir haber uygulaması. FCM ile ilgi alanına özel anlık bildirimler ve Hive ile çevrimdışı haber okuma olanağı sunar.",
-      image: "/src/assets/images/internet1.png",
+      tagline: "Yüksek Hızlı & Kişiselleştirilebilir Mobil Haber Platformu",
+      description: "Son dakika haberlerini anlık bildirim kanallarıyla ileten, internet olmadan da kesintisiz çevrimdışı haber okuma olanağı sunan yüksek performanslı haber uygulaması.",
+      longDescription: "İnternetin Gazetesi, yüksek performanslı ve akıcı bir mobil haber okuma deneyimi sunmak üzere tasarlanmıştır. FCM konu bazlı (topic-based) bildirim kanalları, Hive ile kesintisiz çevrimdışı okuma modu, karanlık/aydınlık tema seçeneği ve dinamik yazı boyutu ayarlama özellikleriyle donatılmıştır.",
+      image: "/images/internet1.png",
       images: [
-        "/src/assets/images/internet1.png",
-        "/src/assets/images/internet2.png"
+        "/images/internet1.png",
+        "/images/internet2.png"
       ],
       role: "Mobil Geliştirici",
       technologies: ["Flutter", "Firebase Auth", "Firebase FCM", "Hive Local DB", "Deep Linking", "REST APIs"],
       keyFeatures: [
-        "Kategori ve ilgi alanına göre özelleştirilmiş son dakika bildirimleri",
-        "Bildirimden doğrudan ilgili habere yönlendiren derin bağlantılar (deep link)",
-        "Hive veritabanı ile internet olmadan haber okuma modu",
-        "Karanlık / Aydınlık tema ve yazı boyutu özelleştirme",
-        "Sosyal medya haber paylaşım altyapısı"
+        "Gündem, ekonomi ve teknoloji gibi kategorilere özel bildirim abonelikleri",
+        "Bildirime tıklandığında doğrudan ilgili haberin detayına giden derin bağlantılar",
+        "Hive veritabanı sayesinde metroda veya çekmeyen yerlerde çevrimdışı haber okuma",
+        "Karanlık ve aydınlık tema ile kişiselleştirilebilir yazı boyutu ayarı",
+        "Haberleri sosyal medyada ve mesajlaşma uygulamalarında kolay paylaşma"
       ],
       architectureHighlights: [
-        "FCM özel konu (topic) abonelik mimarisi",
-        "Ağ trafiğini %40 azaltan akıllı görsel önbellek katmanı",
-        "Derin bağlantı yönlendirici entegrasyonu"
+        "Firebase Cloud Messaging (FCM) konu bazlı (topic-based) anlık bildirim mimarisi",
+        "Hive NoSQL veritabanıyla çevrimdışı önbellekleme ve veri tüketim optimizasyonu",
+        "Uygulama genelinde kararlı derin bağlantı (deep link) yönlendirme mimarisi"
       ]
     },
     {
@@ -536,57 +541,62 @@ export const portfolioDataTR: PortfolioContent = {
       title: "İko Haber",
       date: "03/2026 — 03/2026",
       year: "2026",
-      tagline: "Flutter Flavors ile White-Label Mobil Haber Platformu",
-      description: "Flutter flavors kullanılarak İnternetin Gazetesi'nin white-label varyantı olarak geliştirilen; Firebase Kimlik Doğrulama, Firebase Cloud Messaging, derin bağlantılar, kategori bazlı anlık bildirimler, çevrimdışı Hive önbellekleme ve optimize görsel yükleme içeren İkoHaber uygulamasını tasarladı ve geliştirdi.",
-      longDescription: "İkoHaber, sektörel haber yayını için Flutter build flavors mimarisiyle tek bir kod tabanından üretilen white-label bir mobil haber platformudur.",
-      image: "/src/assets/images/0x0ss.png",
+      tagline: "Sektörel Haber & Yayın Platformu (White-Label)",
+      description: "Kuyumculuk ve sektör profesyonellerine özel haberler, analizler ve canlı piyasa gelişmelerini aktaran kurumsal mobil yayın platformu.",
+      longDescription: "İkoHaber, sektörel yayıncılık ihtiyaçları için Flutter'ın çoklu derleme (white-label / flavor) altyapısıyla geliştirilmiştir. Sektöre özel anlık bildirim kanalları, analizler, piyasa verileri ve kesintisiz çevrimdışı okuma deneyimi sunar.",
+      image: "/images/0x0ss.png",
       images: [
-        "/src/assets/images/0x0ss.png",
-        "/src/assets/images/iko2.png",
-        "/src/assets/images/iko3.png",
-        "/src/assets/images/iko4.png",
-        "/src/assets/images/iko5.png"
+        "/images/0x0ss.png",
+        "/images/iko2.png",
+        "/images/iko3.png",
+        "/images/iko4.png",
+        "/images/iko5.png"
       ],
       role: "Mobil Mimar",
       technologies: ["Flutter Flavors", "Firebase", "FCM", "Deep Links", "White-Labeling", "Hive", "CI/CD"],
       keyFeatures: [
-        "Özelleştirilmiş marka kimliği ve tema paketleriyle multi-flavor mimari",
-        "Sektörel haberlere özel anlık bildirim kanalları",
-        "Otomatik senkronizasyonlu çevrimdışı önbellek",
-        "App Store ve Play Store sürüm otomasyonu"
+        "Tek bir kod tabanından farklı marka ve tasarımlar üreten multi-flavor altyapısı",
+        "Sektör profesyonellerine özel son dakika bildirim kanalları",
+        "Otomatik yenilenen çevrimdışı haber ve dergi önbelleği",
+        "iOS ve Android uygulama mağazaları için otomatik derleme ve dağıtım"
       ],
       architectureHighlights: [
-        "Tek kod tabanında çoklu varyant (white-label) altyapısı",
-        "Hedefli sektörel FCM bildirim kanalları",
-        "İzole edilmiş UI tema belirteçleri (theme tokens)"
+        "Flutter Flavors ile tek kod tabanından çoklu marka ve kurumsal tema derleme mimarisi",
+        "Kullanıcı segmentlerine göre hedeflenmiş sektörel bildirim yönlendirmesi",
+        "Temel iş mantığını korurken görsel temaları izole eden modüler mimari"
       ]
     },
     {
       id: "dugunmaster",
       title: "DüğünMaster",
-      date: "2025 — 2026",
-      year: "2026",
-      tagline: "Pazaryeri & Dijital Düğün Planlama Platformu (Web / Full-Stack)",
-      description: "Düğün sektöründeki işletmeleri çiftlerle buluşturan marketplace ve düğün planlama platformunun geliştirilmesi. Flutter ve Laravel REST API kullanarak işletme listeleme, dinamik filtreleme, arama, favoriler, teklif alma, kullanıcı/işletme yönetimi ve dijital düğün davetiyesi gibi modüllerin geliştirilmesi. Bütçe planlama, misafir listesi, oturma planı ve RSVP gibi düğün planlama araçlarının API ve mobil/web entegrasyonlarının gerçekleştirilmesi. SEO odaklı kategori, lokasyon ve işletme sayfalarının geliştirilmesi.",
-      longDescription: "DüğünMaster, evlenecek çiftler ile düğün salonları, fotoğrafçılar, organizasyon firmaları ve gelinlikçileri bir araya getiren iki taraflı bir pazaryeri ve planlama ekosistemidir. İnteraktif oturma planı, bütçe takipçisi, dijital davetiye, LCV (RSVP) ve anlık fiyat teklifi alma modülleri içerir.",
-      image: "/src/assets/images/dugunmaster_web_preview_1790689268369.jpg",
+      date: "06/2026 — Günümüz",
+      year: "2026 — Günümüz",
+      tagline: "Düğün Mekanları & Dijital Planlama Pazaryeri",
+      description: "Evlenecek çiftlerin düğün salonu, fotoğrafçı ve organizasyon firmalarından kolayca fiyat teklifi alabildiği ve masa planından bütçeye tüm düğünlerini planlayabildiği web ve mobil platform.",
+      longDescription: "DüğünMaster, düğün hazırlığındaki çiftler ile düğün sektöründeki işletmeleri bir araya getiren iki yönlü bir pazaryeridir. Mekan arama ve filtreleme, anında fiyat teklifi isteme, interaktif masa ve oturma planı hazırlama, düğün bütçesi hesaplayıcı ve dijital davetiye ile LCV takibi gibi birçok aracı bir arada sunar.",
+      image: "/images/dugun1.png",
       images: [
-        "/src/assets/images/dugunmaster_web_preview_1790689268369.jpg",
-        "/src/assets/images/dugunmaster_planner_tools_1790689286081.jpg"
+        "/images/dugun1.png",
+        "/images/dugun2.png",
+        "/images/dugun3.png",
+        "/images/dugun4.png",
+        "/images/dugun5.png",
+        "/images/dugun6.png",
+        "/images/dugun7.png"
       ],
       role: "Flutter / Full-Stack Geliştirici",
       technologies: ["Flutter", "Dart", "Laravel", "REST API", "MySQL", "Firebase", "Riverpod", "Authentication", "State Management", "Responsive UI", "SEO", "Dynamic Filtering", "Marketplace Architecture"],
       keyFeatures: [
-        "Kategori, ilçe ve bütçe bazlı dinamik işletme listeleme ve filtreleme motoru",
-        "İşletmelerden anında fiyat teklifi alma ve rezervasyon talep altyapısı",
-        "İnteraktif düğün planlama araçları: masa oturma planı, bütçe yönetimi ve misafir listesi",
-        "Kişiselleştirilebilir dijital düğün davetiyesi ve online LCV (RSVP) takibi",
-        "Arama motorları için SEO ve lokasyon odaklı optimize edilmiş responsive sayfalar"
+        "Şehir, ilçe ve bütçe aralıklarına göre gelişmiş mekan ve işletme filtreleme",
+        "Çiftlerin işletmelerle doğrudan iletişim kurup fiyat teklifi alabildiği talep sistemi",
+        "İnteraktif masa ve oturma planı, misafir listesi ve bütçe takip araçları",
+        "Kişiye özel bağlantılarla paylaşılabilen şık dijital düğün davetiyeleri ve online LCV",
+        "Arama motorlarında üst sıralara çıkmak için optimize edilmiş lokasyon sayfaları"
       ],
       architectureHighlights: [
-        "Laravel REST API ile optimize edilmiş MySQL ilişkisel veritabanı mimarisi",
-        "Riverpod ve reaktif durum yönetimi ile akıcı mobil/web kullanıcı deneyimi",
-        "Yüksek performanslı arama ve dinamik filtreleme sorguları"
+        "Laravel RESTful API backend ve ilişkisel MySQL veritabanı altyapısı",
+        "Riverpod ile reaktif state yönetimi ve mobil/web için optimize edilmiş responsive UI",
+        "Gelişmiş şehir/ilçe/bütçe filtreleme motoru ve dinamik SEO sayfaları"
       ]
     }
   ],

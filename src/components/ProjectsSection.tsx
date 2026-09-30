@@ -27,7 +27,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label="Selected projects"
     >
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-950/80 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+      <div className="sticky top-0 z-20 -mx-6 mb-4 bg-slate-950/80 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
           {lang === 'en' ? 'Projects' : 'Projeler'}
         </h2>
@@ -39,16 +39,16 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
             <li key={project.id} className="mb-12">
               <div 
                 onClick={() => onSelectProject(project)}
-                className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 cursor-pointer"
+                className="group relative grid gap-4 p-4 sm:p-0 rounded-2xl bg-slate-900/40 sm:bg-transparent border border-slate-800/60 sm:border-none transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 cursor-pointer"
               >
                 {/* Background glow on hover */}
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-900/60 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-900/60 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
 
                 {/* Project Image / Thumbnail */}
                 <div className="z-10 sm:order-1 sm:col-span-3 sm:translate-y-1">
                   <div className={`relative ${
                     project.id === 'dugunmaster' 
-                      ? 'aspect-[16/10] max-w-[240px] sm:max-w-none' 
+                      ? 'aspect-[16/10] max-w-[210px] sm:max-w-[220px]' 
                       : 'aspect-[9/16] max-h-52 max-w-[130px] sm:max-w-none'
                   } mx-auto sm:mx-0 overflow-hidden rounded-xl border border-slate-700/80 bg-slate-950 p-1 shadow-lg transition group-hover:border-teal-500/50 group-hover:shadow-teal-500/10`}>
                     <img
@@ -56,7 +56,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       alt={`${project.title} interface preview`}
                       className="h-full w-full object-contain rounded-lg transition duration-300 group-hover:scale-[1.02]"
                       loading="lazy"
-                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (target.src.startsWith('/') && !target.dataset.retried) {
+                          target.dataset.retried = 'true';
+                          target.src = target.src.replace(/^\//, './');
+                        }
+                      }}
                     />
                     {project.images && project.images.length > 1 && (
                       <div className="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-slate-950/85 text-[10px] font-mono text-slate-200 border border-slate-700/60 flex items-center gap-1 backdrop-blur z-10">
@@ -73,17 +79,17 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 {/* Project Info */}
                 <div className="z-10 sm:order-2 sm:col-span-5">
                   <h3>
-                    <div className="inline-flex items-baseline font-medium leading-tight text-slate-200 group-hover:text-teal-300 focus-visible:text-teal-300 text-base">
+                    <div className="inline-flex items-baseline font-medium leading-tight text-slate-100 group-hover:text-teal-300 focus-visible:text-teal-300 text-base sm:text-lg">
                       <span>{project.title}</span>
                       <ArrowUpRight className="ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none" />
                     </div>
                   </h3>
 
-                  <p className="mt-1 text-xs font-medium text-teal-400/90 font-mono">
+                  <p className="mt-1 text-xs sm:text-sm font-medium text-teal-400/90 font-mono">
                     {project.tagline}
                   </p>
 
-                  <p className="mt-2 text-sm leading-normal text-slate-400">
+                  <p className="mt-2 text-sm sm:text-[15px] leading-relaxed text-slate-300">
                     {project.description}
                   </p>
 
