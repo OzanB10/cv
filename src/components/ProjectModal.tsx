@@ -84,16 +84,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   const isLandscapeScreen = project.id === 'dugunmaster' && currentImageIndex < 2;
   const isWebProject = project.id === 'dugunmaster';
 
-  // Image error fallback helper with automatic cache-busting retry
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    const target = e.currentTarget;
-    if (!target.dataset.retried) {
-      target.dataset.retried = 'true';
-      const sep = target.src.includes('?') ? '&' : '?';
-      target.src = `${target.src}${sep}retry=${Date.now()}`;
-    }
-  };
-
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto">
       {/* Backdrop */}
@@ -211,7 +201,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                     alt={`${project.title} screen ${currentImageIndex + 1}`}
                     className="w-full h-full object-contain rounded transition duration-200"
                     loading="eager"
-                    onError={handleImageError}
                   />
 
                   {/* Slider Navigation Controls */}
@@ -257,7 +246,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                     alt={`${project.title} screen ${currentImageIndex + 1}`}
                     className="w-full h-full object-contain rounded-lg transition duration-300"
                     loading="eager"
-                    onError={handleImageError}
                   />
 
                   {/* Slider Navigation Controls */}
@@ -334,7 +322,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                           src={imgSrc}
                           alt="thumbnail"
                           className="w-full h-full object-cover object-top"
-                          onError={handleImageError}
                         />
                         {project.id === 'dugunmaster' && (
                           <span className="absolute bottom-0 inset-x-0 bg-slate-950/85 text-[8px] font-mono text-center text-slate-300 leading-tight py-px">

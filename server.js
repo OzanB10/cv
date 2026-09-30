@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -9,23 +10,37 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const distPath = path.join(__dirname, 'dist');
-const publicImagesPath = path.join(__dirname, 'public', 'images');
+const publicPath = path.join(__dirname, 'public');
 
-// Serve static assets from dist
-app.use(express.static(distPath));
+// 1. Serve static files from dist first (built assets)
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+}
 
-// Explicit fallback for /images to guarantee image loading on Railway/cloud platforms
-app.use('/images', express.static(path.join(distPath, 'images')));
-app.use('/images', express.static(publicImagesPath));
+// 2. Fallback to public folder directly
+if (fs.existsSync(publicPath)) {
+  app.use(express.static(publicPath));
+}
 
-// Never send index.html for missing images or assets
-app.get('/images/*', (req, res) => {
-  res.status(404).send('Image Not Found');
-});
+// 3. Direct route for /images to ensure images in public or dist are always reached
+const publicImages = path.join(publicPath, 'images');
+const distImages = path.join(distPath, 'images');
 
-// SPA fallback: send index.html for any unmatched route
+if (fs.existsSync(publicImages)) {
+  app.use('/images', express.static(publicImages));
+}
+if (fs.existsSync(distImages)) {
+  app.use('/images', express.static(distImages));
+}
+
+// SPA fallback: send index.html for any client navigation route
 app.get('*', (req, res) => {
-  res.sendFile(path.join(distPath, 'index.html'));
+  const indexFile = path.join(distPath, 'index.html');
+  if (fs.existsSync(indexFile)) {
+    res.sendFile(indexFile);
+  } else {
+    res.status(404).send('Application build in progress. Please run npm run build.');
+  }
 });
 
 app.listen(port, '0.0.0.0', () => {
