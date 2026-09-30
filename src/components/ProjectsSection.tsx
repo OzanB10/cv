@@ -55,7 +55,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       src={project.image}
                       alt={`${project.title} interface preview`}
                       className="h-full w-full object-contain rounded-lg transition duration-300 group-hover:scale-[1.02]"
-                      loading="lazy"
+                      loading="eager"
                     />
                     {project.images && project.images.length > 1 && (
                       <div className="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-slate-950/85 text-[10px] font-mono text-slate-200 border border-slate-700/60 flex items-center gap-1 backdrop-blur z-10">

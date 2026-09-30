@@ -9,17 +9,30 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Disable ETag app-wide so every request returns fresh 200 OK in logs
+app.set('etag', false);
+
+const staticOptions = {
+  etag: false,
+  lastModified: false,
+  setHeaders: (res) => {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.set('Pragma', 'no-cache');
+    res.set('Expires', '0');
+  }
+};
+
 const distPath = path.join(__dirname, 'dist');
 const publicPath = path.join(__dirname, 'public');
 
 // 1. Serve static files from dist first (built assets)
 if (fs.existsSync(distPath)) {
-  app.use(express.static(distPath));
+  app.use(express.static(distPath, staticOptions));
 }
 
 // 2. Fallback to public folder directly
 if (fs.existsSync(publicPath)) {
-  app.use(express.static(publicPath));
+  app.use(express.static(publicPath, staticOptions));
 }
 
 // 3. Direct route for /images to ensure images in public or dist are always reached
@@ -27,10 +40,10 @@ const publicImages = path.join(publicPath, 'images');
 const distImages = path.join(distPath, 'images');
 
 if (fs.existsSync(publicImages)) {
-  app.use('/images', express.static(publicImages));
+  app.use('/images', express.static(publicImages, staticOptions));
 }
 if (fs.existsSync(distImages)) {
-  app.use('/images', express.static(distImages));
+  app.use('/images', express.static(distImages, staticOptions));
 }
 
 // SPA fallback: send index.html for any client navigation route
