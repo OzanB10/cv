@@ -15,7 +15,13 @@ const publicImagesPath = path.join(__dirname, 'public', 'images');
 app.use(express.static(distPath));
 
 // Explicit fallback for /images to guarantee image loading on Railway/cloud platforms
+app.use('/images', express.static(path.join(distPath, 'images')));
 app.use('/images', express.static(publicImagesPath));
+
+// Never send index.html for missing images or assets
+app.get('/images/*', (req, res) => {
+  res.status(404).send('Image Not Found');
+});
 
 // SPA fallback: send index.html for any unmatched route
 app.get('*', (req, res) => {

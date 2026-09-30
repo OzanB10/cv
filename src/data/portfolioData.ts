@@ -133,12 +133,12 @@ export const portfolioDataEN: PortfolioContent = {
       tagline: "Fast e-Invoicing & Accounting Mobile App",
       description: "A clean mobile invoicing platform enabling businesses to create, manage, and share official e-Invoices and PDF documents directly from their phones.",
       longDescription: "SadeFatura streamlines digital invoicing for Turkish businesses and freelancers. It provides automated e-Invoice and e-Archive creation, instant vector PDF exports, one-click sharing via WhatsApp and Email, real-time revenue tracking, and secure cloud synchronization.",
-      image: "/images/sade1.png",
+      image: "/images/sade1.png?v=2",
       images: [
-        "/images/sade1.png",
-        "/images/sade2.png",
-        "/images/sade3.png",
-        "/images/sade4.png"
+        "/images/sade1.png?v=2",
+        "/images/sade2.png?v=2",
+        "/images/sade3.png?v=2",
+        "/images/sade4.png?v=2"
       ],
       role: "Lead Mobile Developer & UI Architect",
       technologies: ["Flutter", "Dart", "REST APIs", "PDF Generation", "Cloud Sync", "Secure Storage", "State Management", "e-Invoice API"],
@@ -193,11 +193,11 @@ export const portfolioDataEN: PortfolioContent = {
       tagline: "Curated Venue Discovery & Table Booking App",
       description: "Discover top-rated restaurants, cafes, and bistros, explore full menus and atmospheres, and book tables with real-time confirmation.",
       longDescription: "MekanBook makes finding great dining spots effortless. Users can browse nearby places on an interactive map, filter by cuisine and neighborhood, read authentic reviews, view menus with pricing, and reserve tables directly from their phones.",
-      image: "/images/mekan1.png",
+      image: "/images/mekan1.png?v=2",
       images: [
-        "/images/mekan1.png",
-        "/images/mekan2.png",
-        "/images/mekan3.png"
+        "/images/mekan1.png?v=2",
+        "/images/mekan2.png?v=2",
+        "/images/mekan3.png?v=2"
       ],
       role: "Flutter Developer",
       technologies: ["Flutter", "Riverpod", "Location Services", "Map Integration", "REST APIs", "Filter Engine", "Local DB"],
@@ -427,12 +427,12 @@ export const portfolioDataTR: PortfolioContent = {
       tagline: "Kurumsal Mobil e-Fatura & Ön Muhasebe Platformu",
       description: "GİB mevzuatına tam uyumlu e-Fatura ve e-Arşiv süreçlerini cepten yöneten, anında karekodlu vektörel PDF üreten ve çoklu kullanıcı destekleyen profesyonel mobil ön muhasebe uygulaması.",
       longDescription: "SadeFatura, işletmelerin faturalama ve cari takip süreçlerini mobile taşıyan kapsamlı bir ön muhasebe platformudur. GİB mevzuatına uygun e-Fatura ve e-Arşiv düzenleme, anında karekodlu vektörel PDF oluşturma, tek tıkla WhatsApp ve e-posta ile paylaşım, gerçek zamanlı gelir-gider takibi ve güvenli bulut senkronizasyonu sunar.",
-      image: "/images/sade1.png",
+      image: "/images/sade1.png?v=2",
       images: [
-        "/images/sade1.png",
-        "/images/sade2.png",
-        "/images/sade3.png",
-        "/images/sade4.png"
+        "/images/sade1.png?v=2",
+        "/images/sade2.png?v=2",
+        "/images/sade3.png?v=2",
+        "/images/sade4.png?v=2"
       ],
       role: "Lead Mobil Geliştirici & UI Mimarı",
       technologies: ["Flutter", "Dart", "Clean Architecture", "REST APIs", "PDF Generation", "Cloud Sync", "Secure Storage", "State Management", "e-Fatura API"],
@@ -487,11 +487,11 @@ export const portfolioDataTR: PortfolioContent = {
       tagline: "Restoran Keşfi & Masa Rezervasyon Uygulaması",
       description: "Kullanıcıların çevrelerindeki popüler kafe ve restoranları fotoğrafları ve menüleriyle keşfedip kolayca masa ayırtabildiği sosyal mekan rehberi.",
       longDescription: "MekanBook, şehirdeki en popüler kafe, restoran ve bistroları kullanıcılarla buluşturan iki yönlü bir keşif ve rezervasyon platformudur. Harita üzerinden en yakın mekanları listeleme, mutfak ve bütçe türüne göre filtreleme, yüksek çözünürlüklü mekan fotoğraflarını inceleme ve saniyeler içinde online masa rezervasyonu oluşturma imkanı sunar.",
-      image: "/images/mekan1.png",
+      image: "/images/mekan1.png?v=2",
       images: [
-        "/images/mekan1.png",
-        "/images/mekan2.png",
-        "/images/mekan3.png"
+        "/images/mekan1.png?v=2",
+        "/images/mekan2.png?v=2",
+        "/images/mekan3.png?v=2"
       ],
       role: "Flutter Geliştirici",
       technologies: ["Flutter", "Riverpod", "Konum Servisleri", "Harita Entegrasyonu", "REST APIs", "Filtreleme Motoru", "Local DB"],

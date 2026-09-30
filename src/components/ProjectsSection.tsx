@@ -58,9 +58,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       loading="lazy"
                       onError={(e) => {
                         const target = e.currentTarget;
-                        if (target.src.startsWith('/') && !target.dataset.retried) {
+                        if (!target.dataset.retried) {
                           target.dataset.retried = 'true';
-                          target.src = target.src.replace(/^\//, './');
+                          const sep = target.src.includes('?') ? '&' : '?';
+                          target.src = `${target.src}${sep}retry=${Date.now()}`;
                         }
                       }}
                     />

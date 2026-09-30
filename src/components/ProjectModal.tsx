@@ -84,12 +84,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   const isLandscapeScreen = project.id === 'dugunmaster' && currentImageIndex < 2;
   const isWebProject = project.id === 'dugunmaster';
 
-  // Image error fallback helper
+  // Image error fallback helper with automatic cache-busting retry
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const target = e.currentTarget;
-    if (target.src.startsWith('/') && !target.dataset.retried) {
+    if (!target.dataset.retried) {
       target.dataset.retried = 'true';
-      target.src = target.src.replace(/^\//, './');
+      const sep = target.src.includes('?') ? '&' : '?';
+      target.src = `${target.src}${sep}retry=${Date.now()}`;
     }
   };
 
